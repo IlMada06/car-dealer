@@ -1,0 +1,10 @@
+Ferrari
+F40
+1
+Sport
+1000000
+400
+2000
+Euro 1
+RWD
+2

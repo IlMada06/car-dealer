@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registraClienti.RegistraController">
+   <children>
+      <Rectangle fill="#b219ff" height="440.0" layoutX="-5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="608.0" />
+      <TableView fx:id="tabellaClienti" layoutX="233.0" prefHeight="440.0" prefWidth="370.0">
+        <columns>
+          <TableColumn fx:id="colonnaId" prefWidth="68.0" text="Id" />
+          <TableColumn fx:id="colonnaCognome" prefWidth="111.0" text="Cognome" />
+            <TableColumn fx:id="colonnaNome" prefWidth="95.0" text="Nome" />
+            <TableColumn fx:id="colonnaNascita" prefWidth="96.0" text="Data di Nascita" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtNome" layoutX="25.0" layoutY="90.0" prefHeight="25.0" prefWidth="183.0" promptText="Nome" />
+      <TextField fx:id="txtCognome" layoutX="25.0" layoutY="132.0" prefHeight="25.0" prefWidth="183.0" promptText="Cognome" />
+      <TextField fx:id="txtNascita" layoutX="25.0" layoutY="175.0" prefHeight="25.0" prefWidth="183.0" promptText="Data di nascita (yy/mm/dd)" />
+      <Button fx:id="btnSalva" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#salvaSuFile" prefHeight="39.0" prefWidth="68.0" style="-fx-background-color: #af1aff00;" text="Salva" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAggiungi" layoutX="6.0" layoutY="297.0" mnemonicParsing="false" onAction="#aggiungiCliente" prefHeight="75.0" prefWidth="97.0" style="-fx-background-color: #af1aff00;" text="Aggiungi" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRimuovi" layoutX="136.0" layoutY="297.0" mnemonicParsing="false" onAction="#rimuoviCliente" prefHeight="75.0" prefWidth="97.0" style="-fx-background-color: #af1aff00;" text="Rimuovi" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
