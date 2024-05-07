@@ -34,6 +34,6 @@
          </font>
       </Button>
       <Label fx:id="errore" layoutX="280.0" layoutY="270.0" text="Password o utente errati. Riprova." />
-      <PasswordField fx:id="psw" layoutX="280.0" layoutY="225.0" prefHeight="25.0" prefWidth="230.0" promptText="Password" />
+      <PasswordField fx:id="psw" layoutX="280.0" layoutY="220.0" prefHeight="26.0" prefWidth="230.0" promptText="Password" />
    </children>
 </AnchorPane>

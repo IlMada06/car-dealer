@@ -4,6 +4,7 @@ package management;
 import java.io.IOException;
 import java.util.ArrayList;
 import javafx.collections.ObservableList;
+import login.Login;
 
 public class CarDealer {
     private ObservableList<Car> carList;
@@ -60,12 +61,12 @@ public class CarDealer {
     }
     
     public void saveCustomerList() {
-        file.cleanUpFiles("C:\\Users\\aless\\Desktop\\car-dealer\\src\\file\\customerList.txt");
+        file.cleanUpFiles(Login.customerPath);
         for (int i=0; i<customerList.size(); i++) {
-            file.writeFile("C:\\Users\\aless\\Desktop\\car-dealer\\src\\file\\customerList.txt", customerList.get(i).getName());
-            file.writeFile("C:\\Users\\aless\\Desktop\\car-dealer\\src\\file\\customerList.txt", customerList.get(i).getSurname());
-            file.writeFile("C:\\Users\\aless\\Desktop\\car-dealer\\src\\file\\customerList.txt", customerList.get(i).getBirth());
-            file.writeFile("C:\\Users\\aless\\Desktop\\car-dealer\\src\\file\\customerList.txt", customerList.get(i).getId());
+            file.writeFile(Login.customerPath, customerList.get(i).getName());
+            file.writeFile(Login.customerPath, customerList.get(i).getSurname());
+            file.writeFile(Login.customerPath, customerList.get(i).getBirth());
+            file.writeFile(Login.customerPath, customerList.get(i).getId());
         }
     }
     

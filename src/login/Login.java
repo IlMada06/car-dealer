@@ -19,8 +19,10 @@ public class Login extends Application {
     
     private Stage primaryStage;
     private LoginController loginController;
-    private String carPath = "C:\\Users\\aless\\Desktop\\car-dealer\\src\\file\\carList.txt";
-    private String customerPath = "C:\\Users\\aless\\Desktop\\car-dealer\\src\\file\\customerList.txt";
+    //public static String carPath = "file/carList.txt";
+    public static String carPath = "C:\\Users\\PC\\Documents\\car-dealer\\src\\file\\carList.txt";
+    //public static String customerPath = "file/customerList.txt";
+    public static String customerPath = "C:\\Users\\PC\\Documents\\car-dealer\\src\\file\\customerList.txt";
     
 
     @Override
