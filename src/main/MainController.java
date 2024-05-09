@@ -26,7 +26,7 @@ public class MainController implements Initializable {
     
     @FXML Button RegistraCliente;
     @FXML Button Vendita;
-    @FXML Button Noleggio;
+    @FXML Button Listino;
     
     public void setMainModel(CarDealer gestione) {
         
@@ -62,11 +62,11 @@ public class MainController implements Initializable {
     }
     
     @FXML
-    private void openNoleggio(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/noleggio/noleggio.fxml"));
+    private void openListino(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/listino/listino.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage(StageStyle.DECORATED);
-        stage.setTitle("Noleggio");
+        stage.setTitle("Listino");
         stage.setScene(scene);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.show();

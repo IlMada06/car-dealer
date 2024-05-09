@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-public class GestioneFile {
+public class FileManagement {
     
     public void cleanUpFiles(String path) {
         File targetFile = new File(path);
@@ -56,5 +56,28 @@ public class GestioneFile {
             }
         }
         return customerList;
+    }
+    
+    public ObservableList<Sale> readSale(String path) throws FileNotFoundException, IOException {
+        ObservableList<Sale> saleList = FXCollections.observableArrayList();
+        Car car;
+        Customer customer;
+        String price;
+        String date;
+        
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            while (br.ready()) {
+                br.readLine();
+                car  = new Car(br.readLine(), br.readLine(), br.readLine(), br.readLine(), br.readLine(), br.readLine(), br.readLine(), br.readLine(), br.readLine(), br.readLine());
+                br.readLine();
+                customer = new Customer(br.readLine(), br.readLine(), br.readLine(), br.readLine());
+                br.readLine();
+                price = br.readLine();
+                br.readLine();
+                date = br.readLine();
+                saleList.add(new Sale(car,customer,price,date));
+            }
+        }
+        return saleList;
     }
 }

@@ -21,6 +21,7 @@ public class RegistraController implements Initializable {
     @FXML private TableColumn<Customer, String> colonnaCognome;
     @FXML private TableColumn<Customer, String> colonnaNascita;
     @FXML private TableColumn<Customer, String> colonnaId;
+    @FXML private TextField txtId;
     @FXML private TextField txtNome;
     @FXML private TextField txtCognome;
     @FXML private TextField txtNascita;
@@ -49,6 +50,7 @@ public class RegistraController implements Initializable {
             txtNome.setText(c.getName());
             txtCognome.setText(c.getSurname());
             txtNascita.setText(c.getBirth());
+            txtId.setText(c.getId());
         }
     }
     
@@ -63,7 +65,7 @@ public class RegistraController implements Initializable {
     
     @FXML
     private void rimuoviCliente(ActionEvent event) {
-        LoginController.gestione.removeCustomer(txtNome.getText(), txtCognome.getText(), txtNascita.getText());
+        LoginController.gestione.removeCustomer(txtId.getText());
     }
     
     @FXML void salvaSuFile(ActionEvent event) {

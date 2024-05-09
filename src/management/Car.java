@@ -28,7 +28,10 @@ public class Car {
         this.traction = new SimpleStringProperty(traction);
         this.seats = new SimpleStringProperty(seats);
     }
-
+    public Car() {
+        
+    }
+    
     public StringProperty getBrandProperty() {
         return brand;
     }
@@ -90,4 +93,10 @@ public class Car {
     public String getSeats() {
         return seats.get();
     }
+
+    @Override
+    public String toString() {
+        return getBrand() + "\n" + getModel() + "\n" + getId() + "\n" + getCategory() + "\n" + getPrice() + "\n" + getHp() + "\n" + getCc() + "\n" + getEmissionClass() + "\n" + getTraction() + "\n" + getSeats();
+    }
+    
 }

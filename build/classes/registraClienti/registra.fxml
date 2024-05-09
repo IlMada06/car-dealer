@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
@@ -8,34 +9,49 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registraClienti.RegistraController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registraClienti.RegistraController">
    <children>
-      <Rectangle fill="#b219ff" height="440.0" layoutX="-5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="608.0" />
-      <TableView fx:id="tabellaClienti" layoutX="233.0" prefHeight="440.0" prefWidth="370.0">
+      <Rectangle fill="#28b7fa" height="600.0" layoutX="-5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="238.0" />
+      <TableView fx:id="tabellaClienti" layoutX="233.0" prefHeight="600.0" prefWidth="674.0">
         <columns>
-          <TableColumn fx:id="colonnaId" prefWidth="68.0" text="Id" />
-          <TableColumn fx:id="colonnaCognome" prefWidth="111.0" text="Cognome" />
-            <TableColumn fx:id="colonnaNome" prefWidth="95.0" text="Nome" />
-            <TableColumn fx:id="colonnaNascita" prefWidth="96.0" text="Data di Nascita" />
+          <TableColumn fx:id="colonnaId" prefWidth="68.0" text="ID" />
+          <TableColumn fx:id="colonnaCognome" prefWidth="177.5999755859375" text="Cognome" />
+            <TableColumn fx:id="colonnaNome" prefWidth="194.40005493164062" text="Nome" />
+            <TableColumn fx:id="colonnaNascita" prefWidth="236.7999267578125" text="Data di Nascita" />
         </columns>
       </TableView>
-      <TextField fx:id="txtNome" layoutX="25.0" layoutY="90.0" prefHeight="25.0" prefWidth="183.0" promptText="Nome" />
-      <TextField fx:id="txtCognome" layoutX="25.0" layoutY="132.0" prefHeight="25.0" prefWidth="183.0" promptText="Cognome" />
-      <TextField fx:id="txtNascita" layoutX="25.0" layoutY="175.0" prefHeight="25.0" prefWidth="183.0" promptText="Data di nascita (yy/mm/dd)" />
-      <Button fx:id="btnSalva" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#salvaSuFile" prefHeight="39.0" prefWidth="68.0" style="-fx-background-color: #af1aff00;" text="Salva" textFill="WHITE">
+      <TextField fx:id="txtNome" layoutX="22.0" layoutY="145.0" prefHeight="25.0" prefWidth="183.0" />
+      <TextField fx:id="txtCognome" layoutX="22.0" layoutY="233.0" prefHeight="25.0" prefWidth="183.0" />
+      <TextField fx:id="txtNascita" layoutX="22.0" layoutY="333.0" prefHeight="25.0" prefWidth="183.0" promptText="es. yy/mm/dd" />
+      <Button fx:id="btnSalva" layoutX="3.0" layoutY="14.0" mnemonicParsing="false" onAction="#salvaSuFile" prefHeight="40.0" prefWidth="119.0" style="-fx-background-color: #af1aff00;" text="Salva dati" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btnAggiungi" layoutX="6.0" layoutY="297.0" mnemonicParsing="false" onAction="#aggiungiCliente" prefHeight="75.0" prefWidth="97.0" style="-fx-background-color: #af1aff00;" text="Aggiungi" textFill="WHITE">
+      <Button fx:id="btnAggiungi" layoutX="14.0" layoutY="499.0" mnemonicParsing="false" onAction="#aggiungiCliente" prefHeight="75.0" prefWidth="97.0" style="-fx-background-color: #af1aff00;" text="Aggiungi" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btnRimuovi" layoutX="136.0" layoutY="297.0" mnemonicParsing="false" onAction="#rimuoviCliente" prefHeight="75.0" prefWidth="97.0" style="-fx-background-color: #af1aff00;" text="Rimuovi" textFill="WHITE">
+      <Button fx:id="btnRimuovi" layoutX="125.0" layoutY="499.0" mnemonicParsing="false" onAction="#rimuoviCliente" prefHeight="75.0" prefWidth="97.0" style="-fx-background-color: #af1aff00;" text="Rimuovi" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
+      <Label layoutX="26.0" layoutY="108.0" text="Nome" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="197.0" text="Cognome" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="298.0" text="Data di Nascita" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

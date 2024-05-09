@@ -19,10 +19,9 @@ public class Login extends Application {
     
     private Stage primaryStage;
     private LoginController loginController;
-    //public static String carPath = "file/carList.txt";
-    public static String carPath = "C:\\Users\\PC\\Documents\\car-dealer\\src\\file\\carList.txt";
-    //public static String customerPath = "file/customerList.txt";
-    public static String customerPath = "C:\\Users\\PC\\Documents\\car-dealer\\src\\file\\customerList.txt";
+    public static String carPath = "C:\\Users\\PC\\Documents\\GitHub\\car-dealer\\src\\file\\carList.txt";
+    public static String customerPath = "C:\\Users\\PC\\Documents\\GitHub\\car-dealer\\src\\file\\customerList.txt";
+    public static String salePath = "C:\\Users\\PC\\Documents\\GitHub\\car-dealer\\src\\file\\saleList.txt";
     
 
     @Override
@@ -44,7 +43,7 @@ public class Login extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Login.class.getResource("login.fxml"));
             AnchorPane rootLayout = (AnchorPane) loader.load();
-            CarDealer gestione=new CarDealer(carPath, customerPath);
+            CarDealer gestione=new CarDealer();
             
             loginController=loader.getController();
             loginController.setMainModel(gestione);

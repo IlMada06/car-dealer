@@ -1,11 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="vendita.VenditaController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vendita.VenditaController">
    <children>
-      <Label layoutX="286.0" layoutY="192.0" text="Vendita" />
+      <Rectangle fill="#28b7fa" height="600.0" stroke="TRANSPARENT" strokeType="INSIDE" width="230.0" />
+      <TableView fx:id="tabellaClienti" layoutX="229.0" prefHeight="293.0" prefWidth="671.0">
+        <columns>
+          <TableColumn fx:id="colonnaIdCliente" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colonnaCognome" prefWidth="204.8000030517578" text="Cognome" />
+            <TableColumn fx:id="colonnaNome" prefWidth="222.39999389648438" text="Nome" />
+            <TableColumn fx:id="colonnaNascita" prefWidth="170.39990234375" text="Data di Nascita" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tabellaAutovettura" layoutX="228.0" layoutY="294.0" prefHeight="302.0" prefWidth="671.0">
+        <columns>
+          <TableColumn fx:id="colonnaIdCar" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colonnaModello" prefWidth="207.19996643066406" text="Modello" />
+            <TableColumn fx:id="colonnaMarca" prefWidth="220.80007934570312" text="Marca" />
+            <TableColumn fx:id="colonnaPrezzo" prefWidth="168.0" text="Prezzo" />
+        </columns>
+      </TableView>
+      <Label layoutX="48.0" layoutY="268.0" text="Autovettura" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="1.0" text="Cliente" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="305.0" text="ID Auto" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="364.0" text="Modello" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="425.0" text="Marca" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="484.0" text="Prezzo" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtIdAuto" layoutX="28.0" layoutY="332.0" prefHeight="30.0" prefWidth="175.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtModello" layoutX="28.0" layoutY="392.0" prefHeight="30.0" prefWidth="175.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtMarca" layoutX="28.0" layoutY="453.0" prefHeight="30.0" prefWidth="175.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPrezzo" layoutX="28.0" layoutY="513.0" prefHeight="30.0" prefWidth="175.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="28.0" layoutY="32.0" text="ID Cliente" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtIdCliente" layoutX="28.0" layoutY="64.0" prefHeight="30.0" prefWidth="175.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="27.0" layoutY="94.0" text="Cognome" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCognome" layoutX="28.0" layoutY="119.0" prefHeight="30.0" prefWidth="175.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="26.0" layoutY="149.0" text="Nome" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="28.0" layoutY="174.0" prefHeight="30.0" prefWidth="175.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="26.0" layoutY="206.0" text="Data di nascita" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNascita" layoutX="27.0" layoutY="233.0" prefHeight="30.0" prefWidth="175.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnVendi" layoutX="27.0" layoutY="560.0" mnemonicParsing="false" onAction="#vendiAuto" prefHeight="30.0" prefWidth="175.0" style="-fx-border-color: #ffffff; -fx-background-color: #28b7fa;" text="Vendi" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

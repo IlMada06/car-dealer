@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="listino.ListinoController">
+   <children>
+      <Rectangle fill="#28b7fa" height="600.0" stroke="TRANSPARENT" strokeType="INSIDE" width="230.0" />
+      <TableView fx:id="tabellaListino" layoutX="230.0" prefHeight="600.0" prefWidth="670.0">
+        <columns>
+          <TableColumn fx:id="colonnaId" prefWidth="38.0" text="ID" />
+          <TableColumn fx:id="colonnaModello" prefWidth="209.60003662109375" text="Modello" />
+            <TableColumn fx:id="colonnaMarca" minWidth="0.0" prefWidth="201.60000610351562" text="Marca" />
+            <TableColumn fx:id="colonnaPrezzo" prefWidth="221.60003662109375" text="Prezzo" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtCilindrata" layoutX="15.0" layoutY="125.0" prefHeight="30.0" prefWidth="198.0" style="-fx-background-color: #af1aff00; -fx-text-fill: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="37.0" layoutY="14.0" text="Specifiche" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="94.0" prefHeight="30.0" prefWidth="198.0" text="Cilindrata:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="191.0" prefHeight="30.0" prefWidth="198.0" text="Potenza:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPotenza" layoutX="15.0" layoutY="222.0" prefHeight="30.0" prefWidth="198.0" style="-fx-background-color: #af1aff00; -fx-text-fill: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="23.0" layoutY="288.0" prefHeight="30.0" prefWidth="198.0" text="Emissione:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmissione" layoutX="15.0" layoutY="319.0" prefHeight="30.0" prefWidth="198.0" style="-fx-background-color: #af1aff00; -fx-text-fill: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="23.0" layoutY="394.0" prefHeight="30.0" prefWidth="198.0" text="Trazione:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTrazione" layoutX="15.0" layoutY="425.0" prefHeight="30.0" prefWidth="198.0" style="-fx-background-color: #af1aff00; -fx-text-fill: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="23.0" layoutY="505.0" prefHeight="30.0" prefWidth="198.0" text="Posti:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPosti" layoutX="15.0" layoutY="536.0" prefHeight="30.0" prefWidth="198.0" style="-fx-background-color: #af1aff00; -fx-text-fill: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

@@ -2,9 +2,9 @@ Ferrari
 F40
 1
 Sport
-1000000
-400
-2000
-Euro 1
-RWD
+1.000.000€
+479cv
+2000cc
+Euro1
+Posteriore
 2

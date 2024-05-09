@@ -16,6 +16,9 @@ public class Customer {
         this.birth = new SimpleStringProperty(birth);
         this.id = new SimpleStringProperty(id);
     }
+    public Customer() {
+        
+    }
 
     public StringProperty getIdProperty() {
         return id;
@@ -42,9 +45,10 @@ public class Customer {
     public String getId() {
         return id.get();
     }
-    
-    
 
-    
+    @Override
+    public String toString() {
+        return getName() + "\n" + getSurname() + "\n" + getBirth() + "\n" + getId();
+    }
     
 }

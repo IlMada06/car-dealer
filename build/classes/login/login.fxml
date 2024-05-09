@@ -4,14 +4,16 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
    <children>
-      <Rectangle fill="#b219ff" height="440.0" stroke="TRANSPARENT" strokeType="INSIDE" width="230.0" />
+      <Rectangle fill="#28b7fa" height="440.0" stroke="TRANSPARENT" strokeType="INSIDE" width="230.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="442.0" AnchorPane.topAnchor="0.0" />
       <TextField fx:id="usr" layoutX="280.0" layoutY="165.0" prefHeight="26.0" prefWidth="230.0" promptText="Username" />
+      <PasswordField fx:id="psw" layoutX="280.0" layoutY="220.0" prefHeight="26.0" prefWidth="230.0" promptText="Password" />
       <Label layoutX="280.0" layoutY="106.0" text="Sing in to continue">
          <font>
             <Font size="14.0" />
@@ -28,12 +30,12 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="btnLogin" defaultButton="true" layoutX="280.0" layoutY="300.0" mnemonicParsing="false" onAction="#login" prefHeight="47.0" prefWidth="230.0" style="-fx-background-color: #b219ff;" text="Login" textFill="WHITE">
+      <Button fx:id="btnLogin" defaultButton="true" layoutX="280.0" layoutY="300.0" mnemonicParsing="false" onAction="#login" prefHeight="47.0" prefWidth="230.0" style="-fx-background-color: #28b7fa;" text="Login" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
       <Label fx:id="errore" layoutX="280.0" layoutY="270.0" text="Password o utente errati. Riprova." />
-      <PasswordField fx:id="psw" layoutX="280.0" layoutY="220.0" prefHeight="26.0" prefWidth="230.0" promptText="Password" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
