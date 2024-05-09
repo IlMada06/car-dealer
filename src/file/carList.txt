@@ -2,7 +2,7 @@ Ferrari
 F40
 1
 Sport
-1.000.000€
+1000000
 479cv
 2000cc
 Euro1

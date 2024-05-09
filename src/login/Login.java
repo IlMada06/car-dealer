@@ -1,12 +1,10 @@
 
 package login;
 
-import main.*;
 import java.io.IOException;
 import java.util.Optional;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
@@ -19,9 +17,9 @@ public class Login extends Application {
     
     private Stage primaryStage;
     private LoginController loginController;
-    public static String carPath = "C:\\Users\\PC\\Documents\\GitHub\\car-dealer\\src\\file\\carList.txt";
-    public static String customerPath = "C:\\Users\\PC\\Documents\\GitHub\\car-dealer\\src\\file\\customerList.txt";
-    public static String salePath = "C:\\Users\\PC\\Documents\\GitHub\\car-dealer\\src\\file\\saleList.txt";
+    public static String carPath = "C:\\Users\\aless\\Documents\\GitHub\\car-dealer\\src\\file\\carList.txt";
+    public static String customerPath = "C:\\Users\\aless\\Documents\\GitHub\\car-dealer\\src\\file\\customerList.txt";
+    public static String salePath = "C:\\Users\\aless\\Documents\\GitHub\\car-dealer\\src\\file\\saleList.txt";
     
 
     @Override

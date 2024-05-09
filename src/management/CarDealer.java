@@ -9,7 +9,7 @@ import login.Login;
 public class CarDealer {
     private ObservableList<Car> carList;
     private ObservableList<Customer> customerList;
-    private ArrayList<Sale> saleList;
+    private ObservableList<Sale> saleList;
     private ArrayList<String> customerIdList;
     private FileManagement file;
     
@@ -17,8 +17,8 @@ public class CarDealer {
         this.file = new FileManagement();
         this.carList = file.readCar(Login.carPath);
         this.customerList = file.readCustomer(Login.customerPath);
-        this.saleList = new ArrayList();
-        //this.saleList = file.readSale(Login.salePath);
+        //this.saleList = new ArrayList();
+        this.saleList = file.readSale(Login.salePath);
         
         this.customerIdList = new ArrayList();
         for (int i=0; i<customerList.size(); i++) {
@@ -32,7 +32,9 @@ public class CarDealer {
     public ObservableList<Car> getCarList() {
         return carList;
     }
-    
+    public ObservableList<Sale> getSaleList() {
+        return saleList;
+    }
     public void addCustomer(Customer c) {
         customerList.add(c);
     }
@@ -98,5 +100,17 @@ public class CarDealer {
                 return newId.toString();
             }
         }
+    }
+    
+    public String getTotalIncome() {
+        Integer price = 0;
+        for (int i=0; i<saleList.size(); i++) {
+            price += Integer.valueOf(saleList.get(i).getPrice());
+        }
+        return price.toString();
+    }
+    
+    public void carStockUpdate() throws IOException {
+        this.carList = file.readCar(Login.carPath);
     }
 }

@@ -24,9 +24,10 @@ import vendita.VenditaController;
 
 public class MainController implements Initializable {
     
-    @FXML Button RegistraCliente;
-    @FXML Button Vendita;
-    @FXML Button Listino;
+    @FXML Button btnRegistraCliente;
+    @FXML Button btnVendita;
+    @FXML Button btnListino;
+    @FXML Button btnBilancio;
     
     public void setMainModel(CarDealer gestione) {
         
@@ -71,5 +72,16 @@ public class MainController implements Initializable {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.show();
         
+    }
+    
+    @FXML
+    private void openBilancio(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/bilancio/bilancio.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage(StageStyle.DECORATED);
+        stage.setTitle("Bilancio");
+        stage.setScene(scene);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.show();
     }
 }

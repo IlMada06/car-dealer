@@ -4,6 +4,8 @@ package management;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 
 public class Sale {
     private Car car;
@@ -38,5 +40,12 @@ public class Sale {
     }
     public String getDate() {
         return date;
+    }
+    
+    public StringProperty getDateProperty() {
+        return new SimpleStringProperty(date);
+    }
+    public StringProperty getPriceProperty() {
+        return new SimpleStringProperty(price);
     }
 }

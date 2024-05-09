@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bilancio.BilancioController">
+   <children>
+      <Rectangle fill="#28b7fa" height="600.0" stroke="TRANSPARENT" strokeType="INSIDE" width="230.0" />
+      <TableView fx:id="tabellaVendite" layoutX="230.0" prefHeight="600.0" prefWidth="670.0">
+        <columns>
+            <TableColumn fx:id="colonnaData" prefWidth="129.0" text="Data di vendita" />
+          <TableColumn fx:id="colonnaIdCliente" prefWidth="65.0" text="ID Cliente" />
+          <TableColumn fx:id="colonnaCognome" prefWidth="95.0" text="Cognome" />
+            <TableColumn fx:id="colonnaNome" prefWidth="93.0" text="Nome" />
+            <TableColumn fx:id="colonnaMarca" prefWidth="117.0" text="Marca" />
+            <TableColumn fx:id="colonnaModello" prefWidth="99.0" text="Modello" />
+            <TableColumn fx:id="colonnaPrezzo" prefWidth="75.0" text="Prezzo" />
+        </columns>
+      </TableView>
+      <Label layoutX="28.0" layoutY="25.0" text="Incassi totali" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="incassiTotali" layoutX="42.0" layoutY="80.0" prefHeight="25.0" prefWidth="160.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="80.0" text="€" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRifornimento" layoutX="68.0" layoutY="501.0" mnemonicParsing="false" onAction="#rifornimentoAuto" text="Rifornisci Auto" />
+   </children>
+</AnchorPane>
