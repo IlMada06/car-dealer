@@ -5,6 +5,8 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
@@ -12,6 +14,11 @@
 <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registraClienti.RegistraController">
    <children>
       <Rectangle fill="#28b7fa" height="600.0" layoutX="-5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="238.0" />
+      <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="177.0" layoutY="544.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logoLightBlue.png" />
+         </image>
+      </ImageView>
       <TableView fx:id="tabellaClienti" layoutX="233.0" prefHeight="600.0" prefWidth="674.0">
         <columns>
           <TableColumn fx:id="colonnaId" prefWidth="68.0" text="ID" />
@@ -28,12 +35,12 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btnAggiungi" layoutX="14.0" layoutY="499.0" mnemonicParsing="false" onAction="#aggiungiCliente" prefHeight="75.0" prefWidth="97.0" style="-fx-background-color: #af1aff00;" text="Aggiungi" textFill="WHITE">
+      <Button fx:id="btnAggiungi" layoutX="4.0" layoutY="485.0" mnemonicParsing="false" onAction="#aggiungiCliente" prefHeight="46.0" prefWidth="107.0" style="-fx-background-color: #af1aff00; -fx-border-color: white;" text="Aggiungi" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btnRimuovi" layoutX="125.0" layoutY="499.0" mnemonicParsing="false" onAction="#rimuoviCliente" prefHeight="75.0" prefWidth="97.0" style="-fx-background-color: #af1aff00;" text="Rimuovi" textFill="WHITE">
+      <Button fx:id="btnRimuovi" layoutX="124.0" layoutY="485.0" mnemonicParsing="false" onAction="#rimuoviCliente" prefHeight="46.0" prefWidth="107.0" style="-fx-background-color: #af1aff00; -fx-border-color: white;" text="Rimuovi" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>

@@ -40,7 +40,6 @@ public class FileManagement {
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             while (br.ready()) {
                 carList.add(new Car(br.readLine(), br.readLine(), br.readLine(), br.readLine(), br.readLine(), br.readLine(), br.readLine(), br.readLine(), br.readLine(), br.readLine()));
-                br.readLine();
             }
         }
 

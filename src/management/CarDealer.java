@@ -113,7 +113,7 @@ public class CarDealer {
     public String getTotalIncome() {
         Integer price = 0;
         for (int i=0; i<saleList.size(); i++) {
-            price += Integer.valueOf(saleList.get(i).getPrice());
+            price += Integer.valueOf(saleList.get(i).getPrice().replace(".", ""));
         }
         return price.toString();
     }

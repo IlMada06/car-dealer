@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
@@ -37,6 +39,14 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Button fx:id="btnRifornimento" layoutX="68.0" layoutY="501.0" mnemonicParsing="false" onAction="#rifornimentoAuto" text="Rifornisci Auto" />
+      <Button fx:id="btnRifornimento" layoutX="42.0" layoutY="500.0" mnemonicParsing="false" onAction="#rifornimentoAuto" prefHeight="47.0" prefWidth="160.0" style="-fx-background-color: #28b7fa; -fx-border-color: white;" text="Rifornisci Auto" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <ImageView fitHeight="242.0" fitWidth="230.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logoLightBlue.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
