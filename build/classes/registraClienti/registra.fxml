@@ -27,35 +27,30 @@
             <TableColumn fx:id="colonnaNascita" prefWidth="236.7999267578125" text="Data di Nascita" />
         </columns>
       </TableView>
-      <TextField fx:id="txtNome" layoutX="22.0" layoutY="145.0" prefHeight="25.0" prefWidth="183.0" />
-      <TextField fx:id="txtCognome" layoutX="22.0" layoutY="233.0" prefHeight="25.0" prefWidth="183.0" />
-      <TextField fx:id="txtNascita" layoutX="22.0" layoutY="333.0" prefHeight="25.0" prefWidth="183.0" promptText="es. yy/mm/dd" />
-      <Button fx:id="btnSalva" layoutX="3.0" layoutY="14.0" mnemonicParsing="false" onAction="#salvaSuFile" prefHeight="40.0" prefWidth="119.0" style="-fx-background-color: #af1aff00;" text="Salva dati" textFill="WHITE">
+      <TextField fx:id="txtNome" layoutX="23.0" layoutY="87.0" prefHeight="25.0" prefWidth="183.0" />
+      <TextField fx:id="txtCognome" layoutX="23.0" layoutY="175.0" prefHeight="25.0" prefWidth="183.0" />
+      <TextField fx:id="txtNascita" layoutX="23.0" layoutY="275.0" prefHeight="25.0" prefWidth="183.0" promptText="es. yy/mm/dd" />
+      <Button fx:id="btnAggiungi" layoutX="9.0" layoutY="382.0" mnemonicParsing="false" onAction="#aggiungiCliente" prefHeight="46.0" prefWidth="107.0" style="-fx-background-color: #af1aff00; -fx-border-color: white;" text="Aggiungi" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btnAggiungi" layoutX="4.0" layoutY="485.0" mnemonicParsing="false" onAction="#aggiungiCliente" prefHeight="46.0" prefWidth="107.0" style="-fx-background-color: #af1aff00; -fx-border-color: white;" text="Aggiungi" textFill="WHITE">
+      <Button fx:id="btnRimuovi" layoutX="124.0" layoutY="382.0" mnemonicParsing="false" onAction="#rimuoviCliente" prefHeight="46.0" prefWidth="107.0" style="-fx-background-color: #af1aff00; -fx-border-color: white;" text="Rimuovi" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btnRimuovi" layoutX="124.0" layoutY="485.0" mnemonicParsing="false" onAction="#rimuoviCliente" prefHeight="46.0" prefWidth="107.0" style="-fx-background-color: #af1aff00; -fx-border-color: white;" text="Rimuovi" textFill="WHITE">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <Label layoutX="26.0" layoutY="108.0" text="Nome" textFill="WHITE">
+      <Label layoutX="27.0" layoutY="50.0" text="Nome" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="26.0" layoutY="197.0" text="Cognome" textFill="WHITE">
+      <Label layoutX="27.0" layoutY="139.0" text="Cognome" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="26.0" layoutY="298.0" text="Data di Nascita" textFill="WHITE">
+      <Label layoutX="27.0" layoutY="240.0" text="Data di Nascita" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>

@@ -57,9 +57,9 @@ public class CarDealer {
         saleList.add(new Sale(car, customer));
     }
     
-    public void removeCustomer(String id) {
+    public void removeCustomer(String surname, String name, String birth) {
         for (int i=0; i<customerList.size(); i++) {
-            if(customerList.get(i).getId().equals(id)) {
+            if(customerList.get(i).getSurname().equals(surname) && customerList.get(i).getName().equals(name) && customerList.get(i).getBirth().equals(birth)) {
                 customerList.remove(i);
                 break;
             }
