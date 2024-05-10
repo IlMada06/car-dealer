@@ -13,13 +13,13 @@
       <Rectangle fill="#28b7fa" height="600.0" stroke="TRANSPARENT" strokeType="INSIDE" width="230.0" />
       <TableView fx:id="tabellaVendite" layoutX="230.0" prefHeight="600.0" prefWidth="670.0">
         <columns>
-            <TableColumn fx:id="colonnaData" prefWidth="129.0" text="Data di vendita" />
-          <TableColumn fx:id="colonnaIdCliente" prefWidth="65.0" text="ID Cliente" />
-          <TableColumn fx:id="colonnaCognome" prefWidth="95.0" text="Cognome" />
-            <TableColumn fx:id="colonnaNome" prefWidth="93.0" text="Nome" />
-            <TableColumn fx:id="colonnaMarca" prefWidth="117.0" text="Marca" />
-            <TableColumn fx:id="colonnaModello" prefWidth="99.0" text="Modello" />
-            <TableColumn fx:id="colonnaPrezzo" prefWidth="75.0" text="Prezzo" />
+            <TableColumn fx:id="colonnaData" prefWidth="136.79998779296875" text="Data di vendita" />
+          <TableColumn fx:id="colonnaIdCliente" prefWidth="61.5999755859375" text="ID Cliente" />
+          <TableColumn fx:id="colonnaCognome" prefWidth="91.20001220703125" text="Cognome" />
+            <TableColumn fx:id="colonnaNome" prefWidth="88.00003051757812" text="Nome" />
+            <TableColumn fx:id="colonnaMarca" prefWidth="100.0" text="Marca" />
+            <TableColumn fx:id="colonnaModello" prefWidth="93.60009765625" text="Modello" />
+            <TableColumn fx:id="colonnaPrezzo" prefWidth="109.5999755859375" text="Prezzo" />
         </columns>
       </TableView>
       <Label layoutX="28.0" layoutY="25.0" text="Incassi totali" textFill="WHITE">

@@ -30,12 +30,18 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="btnLogin" defaultButton="true" layoutX="280.0" layoutY="300.0" mnemonicParsing="false" onAction="#login" prefHeight="47.0" prefWidth="230.0" style="-fx-background-color: #28b7fa;" text="Login" textFill="WHITE">
+      <Button fx:id="btnLogin" defaultButton="true" layoutX="280.0" layoutY="300.0" mnemonicParsing="false" onAction="#login" prefHeight="47.0" prefWidth="102.0" style="-fx-background-color: #28b7fa;" text="Login" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
       <Label fx:id="errore" layoutX="280.0" layoutY="270.0" text="Password o utente errati. Riprova." />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnSignin" defaultButton="true" layoutX="407.0" layoutY="300.0" mnemonicParsing="false" onAction="#signin" prefHeight="47.0" prefWidth="102.0" style="-fx-background-color: #28b7fa;" text="Sign In" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="esistenteErrore" layoutX="280.0" layoutY="270.0" text="Nome utente già utilizzato." />
    </children>
 </AnchorPane>

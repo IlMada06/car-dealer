@@ -10,6 +10,7 @@ public class CarDealer {
     private ObservableList<Car> carList;
     private ObservableList<Customer> customerList;
     private ObservableList<Sale> saleList;
+    private ArrayList<User> userList;
     private ArrayList<String> customerIdList;
     private FileManagement file;
     
@@ -17,8 +18,8 @@ public class CarDealer {
         this.file = new FileManagement();
         this.carList = file.readCar(Login.carPath);
         this.customerList = file.readCustomer(Login.customerPath);
-        //this.saleList = new ArrayList();
         this.saleList = file.readSale(Login.salePath);
+        this.userList = file.readUser(Login.userPath);
         
         this.customerIdList = new ArrayList();
         for (int i=0; i<customerList.size(); i++) {
@@ -88,6 +89,13 @@ public class CarDealer {
             file.writeFile(Login.salePath, saleList.get(i).getDate());
         }
     }
+    public void saveUserList() {
+        file.cleanUpFiles(Login.userPath);
+        for (int i=0; i<userList.size(); i++) {
+            file.writeFile(Login.salePath, userList.get(i).getName());
+            file.writeFile(Login.salePath, userList.get(i).getPassword());
+        }
+    }
     
     public String getNewId() {
         Integer newId=1;
@@ -112,5 +120,28 @@ public class CarDealer {
     
     public void carStockUpdate() throws IOException {
         this.carList = file.readCar(Login.carPath);
+    }
+    
+    public boolean tryLogin(String name, String password){
+        for (int i=0; i<userList.size(); i++) {
+            if (userList.get(i).getName().equals(name) && userList.get(i).getPassword().equals(password)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public boolean isRegistered(String name) {
+        for (int i=0; i<userList.size(); i++) {
+            if (userList.get(i).getName().equals(name)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public void registerUser(String name, String password) throws IOException {
+        file.writeFile(Login.userPath, name);
+        file.writeFile(Login.userPath, password);
+        this.userList = file.readUser(Login.userPath);
     }
 }

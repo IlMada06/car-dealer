@@ -17,10 +17,10 @@ public class Login extends Application {
     
     private Stage primaryStage;
     private LoginController loginController;
-    public static String carPath = "C:\\Users\\aless\\Documents\\GitHub\\car-dealer\\src\\file\\carList.txt";
-    public static String customerPath = "C:\\Users\\aless\\Documents\\GitHub\\car-dealer\\src\\file\\customerList.txt";
-    public static String salePath = "C:\\Users\\aless\\Documents\\GitHub\\car-dealer\\src\\file\\saleList.txt";
-    
+    public static String carPath = System.getProperty("user.dir")+"\\src\\file\\carList.txt";
+    public static String customerPath = System.getProperty("user.dir")+"\\src\\file\\customerList.txt";
+    public static String salePath = System.getProperty("user.dir")+"\\src\\file\\saleList.txt";
+    public static String userPath = System.getProperty("user.dir")+"\\src\\file\\userList.txt";
 
     @Override
     public void start(Stage primaryStage) throws Exception {

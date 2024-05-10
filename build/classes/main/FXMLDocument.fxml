@@ -8,19 +8,19 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
    <children>
       <Rectangle fill="#28b7fa" height="600.0" stroke="TRANSPARENT" strokeType="INSIDE" width="450.0" />
-      <Button fx:id="btnRegistraCliente" layoutX="109.0" layoutY="236.0" mnemonicParsing="false" onAction="#openRegistraCliente" prefHeight="128.0" prefWidth="230.0" style="-fx-background-color: #af1aff00;" text="Registra Cliente" textFill="WHITE" AnchorPane.leftAnchor="109.0" AnchorPane.topAnchor="236.0">
+      <Button fx:id="btnRegistraCliente" layoutX="119.0" layoutY="319.0" mnemonicParsing="false" onAction="#openRegistraCliente" prefHeight="128.0" prefWidth="230.0" style="-fx-background-color: #af1aff00;" text="Registra Cliente" textFill="WHITE" AnchorPane.leftAnchor="119.0" AnchorPane.topAnchor="319.0">
          <font>
             <Font size="24.0" />
          </font></Button>
-      <Button fx:id="btnVendita" layoutX="110.0" layoutY="442.0" mnemonicParsing="false" onAction="#openVendita" prefHeight="128.0" prefWidth="230.0" style="-fx-background-color: #af1aff00;" text="Vendita" textFill="WHITE" AnchorPane.topAnchor="442.0">
+      <Button fx:id="btnVendita" layoutX="119.0" layoutY="472.0" mnemonicParsing="false" onAction="#openVendita" prefHeight="128.0" prefWidth="230.0" style="-fx-background-color: #af1aff00;" text="Vendita" textFill="WHITE" AnchorPane.topAnchor="472.0">
          <font>
             <Font size="24.0" />
          </font></Button>
-      <Button fx:id="btnListino" layoutX="108.0" layoutY="14.0" mnemonicParsing="false" onAction="#openListino" prefHeight="128.0" prefWidth="230.0" style="-fx-background-color: #af1aff00;" text="Listino" textFill="WHITE" AnchorPane.rightAnchor="561.6" AnchorPane.topAnchor="14.0">
+      <Button fx:id="btnListino" layoutX="119.0" layoutY="7.0" mnemonicParsing="false" onAction="#openListino" prefHeight="128.0" prefWidth="230.0" style="-fx-background-color: #af1aff00;" text="Listino" textFill="WHITE" AnchorPane.rightAnchor="550.6" AnchorPane.topAnchor="7.0">
          <font>
             <Font size="24.0" />
          </font></Button>
-      <Button fx:id="btnBilancio" layoutX="529.0" layoutY="236.0" mnemonicParsing="false" onAction="#openBilancio" prefHeight="128.0" prefWidth="230.0" style="-fx-background-color: #af1aff00;" text="Bilancio" textFill="WHITE">
+      <Button fx:id="btnBilancio" layoutX="119.0" layoutY="148.0" mnemonicParsing="false" onAction="#openBilancio" prefHeight="128.0" prefWidth="230.0" style="-fx-background-color: #af1aff00;" text="Bilancio" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>

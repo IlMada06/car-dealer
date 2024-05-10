@@ -80,4 +80,15 @@ public class FileManagement {
         }
         return saleList;
     }
+    
+    public ArrayList<User> readUser(String path) throws FileNotFoundException, IOException {
+        ArrayList<User> userList = new ArrayList();
+        
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            while (br.ready()) {
+                userList.add(new User(br.readLine(), br.readLine()));
+            }
+        }
+        return userList;
+    }
 }

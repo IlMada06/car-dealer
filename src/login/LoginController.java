@@ -30,7 +30,9 @@ public class LoginController implements Initializable {
     @FXML TextField usr;
     @FXML TextField psw;
     @FXML Button btnLogin;
+    @FXML Button btnSignin;
     @FXML Label errore;
+    @FXML Label esistenteErrore;
     
     
     public static CarDealer gestione;
@@ -43,11 +45,12 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         errore.setVisible(false);
+        esistenteErrore.setVisible(false);
     }    
     
     @FXML
     private void login(ActionEvent event) throws IOException {
-        if (usr.getText().equals("admin") && psw.getText().equals("admin")) {
+        if (gestione.tryLogin(usr.getText(), psw.getText())) {
             Stage stage = new Stage(StageStyle.DECORATED);
             Parent root = FXMLLoader.load(getClass().getResource("/main/FXMLDocument.fxml"));
             Scene scene = new Scene(root);
@@ -58,7 +61,19 @@ public class LoginController implements Initializable {
             ((Node)event.getSource()).getScene().getWindow().hide();
         }
         else {
+            esistenteErrore.setVisible(false);
             errore.setVisible(true);
         }
     } 
+    
+    @FXML
+    public void signin(ActionEvent event) throws IOException {
+        if (!gestione.isRegistered(usr.getText())) {
+            gestione.registerUser(usr.getText(), psw.getText());
+        }
+        else {
+            errore.setVisible(false);
+            esistenteErrore.setVisible(true);
+        }
+    }
 }
